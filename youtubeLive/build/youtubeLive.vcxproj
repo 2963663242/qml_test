@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCF6D7FF-5C45-3F65-A227-C34E5748DAA4}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>youtubeLive</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\project\qt\youtubeLive\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">youtubeLive.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">youtubeLive</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\project\qt\youtubeLive\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">youtubeLive.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">youtubeLive</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\project\qt\youtubeLive\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">youtubeLive.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">youtubeLive</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\project\qt\youtubeLive\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">youtubeLive.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">youtubeLive</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_Debug;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_QML_DEBUG;QT_CORE_LIB;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;QT_QML_DEBUG;QT_CORE_LIB;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_Debug;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_Debug;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target youtubeLive</Message>
+      <Command>setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Quickd.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Widgetsd.lib;LibVideoDownload.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5QmlModelsd.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Qmld.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Networkd.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Guid.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/project/qt/youtubeLive/sdk/win/lib;D:/project/qt/youtubeLive/sdk/win/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/project/qt/youtubeLive/build/Debug/youtubeLive.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/project/qt/youtubeLive/build/Debug/youtubeLive.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_Release;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_Release;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_Release;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target youtubeLive</Message>
+      <Command>setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Quick.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Widgets.lib;LibVideoDownload.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5QmlModels.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Qml.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Network.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Gui.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/project/qt/youtubeLive/sdk/win/lib;D:/project/qt/youtubeLive/sdk/win/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/project/qt/youtubeLive/build/Release/youtubeLive.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/project/qt/youtubeLive/build/Release/youtubeLive.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_MinSizeRel;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_MinSizeRel;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_MinSizeRel;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target youtubeLive</Message>
+      <Command>setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Quick.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Widgets.lib;LibVideoDownload.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5QmlModels.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Qml.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Network.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Gui.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/project/qt/youtubeLive/sdk/win/lib;D:/project/qt/youtubeLive/sdk/win/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/project/qt/youtubeLive/build/MinSizeRel/youtubeLive.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/project/qt/youtubeLive/build/MinSizeRel/youtubeLive.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_RelWithDebInfo;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_QML_DEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_QML_DEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_RelWithDebInfo;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\qt\youtubeLive\build;D:\project\qt\youtubeLive;D:\project\qt\youtubeLive\build\youtubeLive_autogen\include_RelWithDebInfo;D:\project\qt\youtubeLive\sdk\include;D:\app\qt\5.15.1\msvc2019_64\include;D:\app\qt\5.15.1\msvc2019_64\include\QtCore;D:\app\qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;D:\app\qt\5.15.1\msvc2019_64\include\QtQuick;D:\app\qt\5.15.1\msvc2019_64\include\QtQmlModels;D:\app\qt\5.15.1\msvc2019_64\include\QtQml;D:\app\qt\5.15.1\msvc2019_64\include\QtNetwork;D:\app\qt\5.15.1\msvc2019_64\include\QtGui;D:\app\qt\5.15.1\msvc2019_64\include\QtANGLE;D:\app\qt\5.15.1\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target youtubeLive</Message>
+      <Command>setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Quick.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Widgets.lib;LibVideoDownload.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5QmlModels.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Qml.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Network.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Gui.lib;D:\app\qt\5.15.1\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/project/qt/youtubeLive/sdk/win/lib;D:/project/qt/youtubeLive/sdk/win/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/project/qt/youtubeLive/build/RelWithDebInfo/youtubeLive.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/project/qt/youtubeLive/build/RelWithDebInfo/youtubeLive.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\project\qt\youtubeLive\build\CMakeFiles\64e669451178635b25e0f73a758cc89d\qrc_qml.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for qml.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\project\qt\youtubeLive\qml.qrc;D:\project\qt\youtubeLive\build\CMakeFiles\youtubeLive_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json;D:\project\qt\youtubeLive\main.qml;D:\project\qt\youtubeLive\ParseDialog.qml;D:\project\qt\youtubeLive\imgs\loading.gif;D:\app\qt\5.15.1\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\project\qt\youtubeLive\build\youtubeLive_autogen\EWIEGA46WW\qrc_qml.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for qml.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\project\qt\youtubeLive\qml.qrc;D:\project\qt\youtubeLive\build\CMakeFiles\youtubeLive_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json;D:\project\qt\youtubeLive\main.qml;D:\project\qt\youtubeLive\ParseDialog.qml;D:\project\qt\youtubeLive\imgs\loading.gif;D:\app\qt\5.15.1\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\project\qt\youtubeLive\build\youtubeLive_autogen\EWIEGA46WW\qrc_qml.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for qml.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\project\qt\youtubeLive\qml.qrc;D:\project\qt\youtubeLive\build\CMakeFiles\youtubeLive_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json;D:\project\qt\youtubeLive\main.qml;D:\project\qt\youtubeLive\ParseDialog.qml;D:\project\qt\youtubeLive\imgs\loading.gif;D:\app\qt\5.15.1\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\project\qt\youtubeLive\build\youtubeLive_autogen\EWIEGA46WW\qrc_qml.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for qml.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\project\qt\youtubeLive\qml.qrc;D:\project\qt\youtubeLive\build\CMakeFiles\youtubeLive_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json;D:\project\qt\youtubeLive\main.qml;D:\project\qt\youtubeLive\ParseDialog.qml;D:\project\qt\youtubeLive\imgs\loading.gif;D:\app\qt\5.15.1\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\project\qt\youtubeLive\build\youtubeLive_autogen\EWIEGA46WW\qrc_qml.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\project\qt\youtubeLive\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/project/qt/youtubeLive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/project/qt/youtubeLive -BD:/project/qt/youtubeLive/build --check-stamp-file D:/project/qt/youtubeLive/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlPreviewServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5Quick_QSGD3D12Adaptation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\project\qt\youtubeLive\qml.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\project\qt\youtubeLive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/project/qt/youtubeLive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/project/qt/youtubeLive -BD:/project/qt/youtubeLive/build --check-stamp-file D:/project/qt/youtubeLive/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlPreviewServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5Quick_QSGD3D12Adaptation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\project\qt\youtubeLive\qml.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\project\qt\youtubeLive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/project/qt/youtubeLive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/project/qt/youtubeLive -BD:/project/qt/youtubeLive/build --check-stamp-file D:/project/qt/youtubeLive/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlPreviewServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5Quick_QSGD3D12Adaptation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\project\qt\youtubeLive\qml.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\project\qt\youtubeLive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/project/qt/youtubeLive/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/project/qt/youtubeLive -BD:/project/qt/youtubeLive/build --check-stamp-file D:/project/qt/youtubeLive/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlPreviewServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5QmlModels\Qt5QmlModelsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Quick\Qt5Quick_QSGD3D12Adaptation.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\app\qt\5.15.1\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\project\qt\youtubeLive\build\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\project\qt\youtubeLive\qml.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\project\qt\youtubeLive\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\project\qt\youtubeLive\build\youtubeLive_autogen\mocs_compilation.cpp" />
+    <ClCompile Include="D:\project\qt\youtubeLive\main.cpp" />
+    <None Include="D:\project\qt\youtubeLive\qml.qrc" />
+    <ClCompile Include="D:\project\qt\youtubeLive\clipboard.cpp" />
+    <ClInclude Include="D:\project\qt\youtubeLive\clipboard.h" />
+    <ClCompile Include="D:\project\qt\youtubeLive\fsdownloader.cpp" />
+    <ClInclude Include="D:\project\qt\youtubeLive\fsdownloader.h" />
+    <ClCompile Include="D:\project\qt\youtubeLive\build\youtubeLive_autogen\EWIEGA46WW\qrc_qml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\project\qt\youtubeLive\build\ZERO_CHECK.vcxproj">
+      <Project>{9A0FCF01-3DC8-3426-BE2D-E775C958501A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

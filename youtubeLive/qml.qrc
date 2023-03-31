@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ParseDialog.qml</file>
+        <file>imgs/loading.gif</file>
+    </qresource>
+</RCC>

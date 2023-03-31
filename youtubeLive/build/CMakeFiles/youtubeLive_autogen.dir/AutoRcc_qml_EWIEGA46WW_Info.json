@@ -1,0 +1,32 @@
+{
+	"BUILD_DIR" : "D:/project/qt/youtubeLive/build/youtubeLive_autogen",
+	"CMAKE_BINARY_DIR" : "D:/project/qt/youtubeLive/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/project/qt/youtubeLive/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/project/qt/youtubeLive",
+	"CMAKE_SOURCE_DIR" : "D:/project/qt/youtubeLive",
+	"INCLUDE_DIR" : "D:/project/qt/youtubeLive/build/youtubeLive_autogen/include",
+	"INCLUDE_DIR_Debug" : "D:/project/qt/youtubeLive/build/youtubeLive_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "D:/project/qt/youtubeLive/build/youtubeLive_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "D:/project/qt/youtubeLive/build/youtubeLive_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "D:/project/qt/youtubeLive/build/youtubeLive_autogen/include_Release",
+	"INPUTS" : 
+	[
+		"D:/project/qt/youtubeLive/main.qml",
+		"D:/project/qt/youtubeLive/ParseDialog.qml",
+		"D:/project/qt/youtubeLive/imgs/loading.gif"
+	],
+	"LOCK_FILE" : "D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : true,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "D:/app/qt/5.15.1/msvc2019_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SETTINGS_FILE_Debug" : "D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used_Release.txt",
+	"SOURCE" : "D:/project/qt/youtubeLive/qml.qrc",
+	"VERBOSITY" : 0
+}

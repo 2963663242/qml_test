@@ -1,0 +1,30 @@
+^D:\PROJECT\QT\YOUTUBELIVE\BUILD\CMAKEFILES\64E669451178635B25E0F73A758CC89D\QRC_QML.CPP.RULE
+setlocal
+cd D:\project\qt\youtubeLive\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/project/qt/youtubeLive/build/CMakeFiles/youtubeLive_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\QT\YOUTUBELIVE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/project/qt/youtubeLive -BD:/project/qt/youtubeLive/build --check-stamp-file D:/project/qt/youtubeLive/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

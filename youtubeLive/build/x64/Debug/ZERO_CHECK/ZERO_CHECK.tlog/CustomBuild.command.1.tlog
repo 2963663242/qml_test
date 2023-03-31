@@ -1,0 +1,10 @@
+^D:\PROJECT\QT\YOUTUBELIVE\BUILD\CMAKEFILES\E1F52C39A7D4CDC26867FA945860D377\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/project/qt/youtubeLive -BD:/project/qt/youtubeLive/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/project/qt/youtubeLive/build/youtubeLive.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
