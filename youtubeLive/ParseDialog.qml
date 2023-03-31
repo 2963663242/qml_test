@@ -1,6 +1,9 @@
 import QtQuick 2.0
 import QtQuick.Window 2.15
 import com.Downloader 1.0
+import QtQml.Models 2.15
+import QtQuick.Layouts 1.15
+import QtQuick.Controls 2.15
 
 Window {
     id: root
@@ -22,22 +25,32 @@ Window {
     function showParsResult(json) {
         console.log(json)
 
-        //解析完成关闭加载图标
-        loading_img.visible = false
 
-        var root = JSON.parse(json)
-        if (root["type"] == "parse") {
-            var msg = root["msg"]
+
+        var rootJson = JSON.parse(json)
+        if (rootJson["type"] == "parsed") {
+            var msg = rootJson["msg"]
             var is_live = msg['is_live']
             if (is_live === true) {
+                root.title = msg["title"]
+//                for(var v in msg["videos"])
+//                    v["format_id"] = v["id"]
+                data.clear();
+                data.append(msg["videos"]);
+                //console.log(msg["thumbnails"][msg["thumbnails"].length-1]["url"])
+                image_thumbnail.source=msg["thumbnails"][msg["thumbnails"].length-1]["url"]
+               //image_thumbnail.source = "C:\\Users\\Administrator\\AppData\\Local\\Temp\\youtubeLive-BhvZha\\7b8b3daf50f32eec2eaa2f02a61eb67e.jpg"
+                live_info.visible = true;
 
             } else {
                 text_no_live.visible = true
             }
         }
-        else if(root["type"] == "finished"){
-             var msg = root["msg"]
-            if(parseInt(msg["ret_code"]) != "0"){
+        else if(rootJson["type"] == "finished"){
+            //解析完成关闭加载图标
+            loading_img.visible = false
+             var msg = rootJson["msg"]
+            if(parseInt(msg["ret_code"]) != "1"){
                 text_error.visible = true
             }
         }
@@ -68,11 +81,67 @@ Window {
         visible: false
         text: qsTr("parse url error occur!!!")
     }
+    Rectangle{
+        id: live_info
+        visible: false
+        anchors.fill: parent
+        ColumnLayout{
+            anchors.fill: parent
+                Image{
+                    Layout.preferredWidth:300
+                    Layout.preferredHeight:sourceSize.height * 300 / sourceSize.width
+                    id:image_thumbnail
+                    Layout.alignment: Qt.AlignHCenter
+                }
+
+            ListView{
+                    id:chioceView
+                    Layout.fillHeight: true
+                    Layout.fillWidth:true
+                    model:ListModel{
+                        id: data
+                    }
+                    delegate:
+                        RadioButton {
+                            objectName:id
+                            anchors.left: parent.left
+                            anchors.leftMargin: 50
+                            text: "      "+ext+"        "+quality+"P     "+filesize
+                            onClicked: {
+
+                                    btn_download.enabled=true
+                            }
+                        }
+                }
+
+            Button{
+                id:btn_download
+                text: "download"
+                 Layout.alignment:Qt.AlignRight
+                 enabled : false
+                 onClicked: {
+
+                       for (var i = 0; i < chioceView.count; i++) {
+
+                           var radioButton = chioceView.itemAtIndex(i);
+                           if (radioButton.checked) {
+                                 var objName = radioButton.objectName
+                                  root.close()
+                           }
+                       }
+                   }
+            }
+    }
+    }
+
+
     Component.onCompleted: {
         downlaoder.parseSucc.connect(showParsResult)
         closing.connect(() => {
                             loading_img.visible = false
-                            error_text.visible = false
+                            text_no_live.visible = false
+                            text_error.visible = false
+                            live_info.visible = false
                         })
     }
 }

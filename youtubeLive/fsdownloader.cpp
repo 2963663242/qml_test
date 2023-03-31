@@ -24,7 +24,7 @@ FsDownloader::FsDownloader(QObject *parent) : QObject(parent)
 
 
 void FsDownloader::stateInform(char * json){
-    cout << json << endl;
+   // cout << json << endl;
 //   QJsonParseError jsonParseError;
 //   QJsonDocument jsonDocument = QJsonDocument::fromJson(json, &jsonParseError);
 //   if (jsonParseError.error == QJsonParseError::NoError) {

@@ -53,7 +53,7 @@ target_include_directories(youtubeLive PUBLIC
 target_link_directories(youtubeLive PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/sdk/win/lib)
 
 target_compile_definitions(youtubeLive
-  PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
+  PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG> QT_QML_DEBUG)
 target_link_libraries(youtubeLive
   PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::Widgets LibVideoDownload.lib)
 
@@ -69,7 +69,7 @@ if(QT_VERSION_MAJOR EQUAL 6)
 endif()
 
 # 添加生成后事件
-add_custom_command(
-TARGET youtubeLive POST_BUILD
-COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${CMAKE_BINARY_DIR}\"" /E /S /Y
-)
+#add_custom_command(
+#TARGET youtubeLive POST_BUILD
+#COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${CMAKE_BINARY_DIR}\"" /E /S /Y
+#)
