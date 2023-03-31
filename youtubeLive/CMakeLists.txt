@@ -69,7 +69,7 @@ if(QT_VERSION_MAJOR EQUAL 6)
 endif()
 
 # 添加生成后事件
-#add_custom_command(
-#TARGET youtubeLive POST_BUILD
-#COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${CMAKE_BINARY_DIR}\"" /E /S /Y
-#)
+add_custom_command(
+TARGET youtubeLive POST_BUILD
+COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${CMAKE_BINARY_DIR}\"" /E /S /Y
+)
