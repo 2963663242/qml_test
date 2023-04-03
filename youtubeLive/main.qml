@@ -2,7 +2,7 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import com.common 1.0
-
+import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.0
 
 Window {
@@ -17,19 +17,31 @@ Window {
         // 使用正则表达式测试文本
         return pattern.test(text)
     }
+    ColumnLayout{
+        anchors.fill: parent
+        Button {
+            text: qsTr("parse url")
+            onClicked: {
 
-    Button {
-        text: qsTr("parse url")
-        onClicked: {
-
-            var text = clipboard.getText()
-            if (!isUrl(text)) {
-                return
+                var text = clipboard.getText()
+                if (!isUrl(text)) {
+                    return
+                }
+                parseDialog.open()
+                parseDialog.parseUrl(text)
             }
-            parseDialog.open()
-            parseDialog.parseUrl(text)
+        }
+
+        DownloadView{
+            id:downloadView
+            Layout.fillWidth: true
+            Layout.fillHeight: true
         }
     }
+
+
+
+
     ParseDialog {
         id: parseDialog
     }
@@ -38,4 +50,7 @@ Window {
         id: clipboard
     }
 
+    Component.onCompleted: {
+        parseDialog.selectOver.connect(downloadView.selectOver);
+    }
 }

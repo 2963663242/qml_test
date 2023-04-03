@@ -9,6 +9,9 @@ using namespace std;
 
 #define LOG_PATH "Log"
 
+QString initSavePath();
+
+QString FsDownloader::savePath = initSavePath();
 
 FsDownloader::FsDownloader(QObject *parent) : QObject(parent)
 {
@@ -37,6 +40,7 @@ void FsDownloader::stateInform(char * json){
 //            }
 //    }
      this->parseSucc(json);
+     cout << json << endl;
 }
 
 void FsDownloader::parse(QString url){
@@ -57,4 +61,53 @@ void FsDownloader::parse(QString url){
     string strJson = jsonString.toStdString();
     m_downloader.parse((char *)strJson.c_str(),this);
 
+}
+
+void FsDownloader::download(QString url,QString formatId){
+    if(m_tmpDir)
+        delete m_tmpDir;
+    m_tmpDir = new QTemporaryDir;
+
+    QJsonObject root;
+    QJsonObject downloader;
+
+    root["log_path"] = LOG_PATH;
+    root["ffmpeg_location"] = QCoreApplication::applicationDirPath()+"/winBin";
+    downloader["url"] =url;
+    downloader["save_path"] = m_tmpDir->path();
+    downloader["sniff_only"] = "false";
+    downloader["custom_format"]=formatId;
+    root["downloader"] = downloader;
+    QJsonDocument jsonDocument(root);
+    QString jsonString = jsonDocument.toJson(QJsonDocument::Indented);
+    string strJson = jsonString.toStdString();
+    m_downloader.download((char *)strJson.c_str(),this);
+
+}
+
+
+QString FsDownloader::stop(QString path){
+
+    m_downloader.stop(this);
+   QFileInfo fileInfo(path);
+   QString filename = fileInfo.fileName();
+   filename = filename.mid(0,filename.lastIndexOf("."));
+
+   QString newPath = FsDownloader::savePath +"/"+filename;
+   cout << "newPath:"<<newPath.toStdString() << endl;
+    QFile::copy(path, newPath);
+    return "";
+}
+
+
+QString initSavePath(){
+
+    QDir currentDir = QDir::current();
+    QString path =  currentDir.absoluteFilePath("videos");
+    QDir dir(path);
+
+    if (!dir.exists()) {
+        dir.mkpath("");
+    }
+    return path;
 }

@@ -3,5 +3,8 @@
         <file>main.qml</file>
         <file>ParseDialog.qml</file>
         <file>imgs/loading.gif</file>
+        <file>DownloadingView.qml</file>
+        <file>DownloadItem.qml</file>
+        <file>DownloadView.qml</file>
     </qresource>
 </RCC>

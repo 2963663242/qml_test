@@ -14,6 +14,10 @@ public:
     explicit FsDownloader(QObject *parent = nullptr);
     virtual void  stateInform(char* json);
    Q_INVOKABLE  void parse(QString url);
+   Q_INVOKABLE  void download(QString url,QString formatId);
+    Q_INVOKABLE  QString stop(QString path);
+public:
+    static QString savePath;
 signals:
     void parseSucc(QString json);
 private:

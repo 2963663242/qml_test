@@ -11,7 +11,11 @@ Window {
     height: 600
     title: qsTr("parseDialog")
     visible: false
+    flags: Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint | Qt.WindowStaysOnTopHint | Qt.MSWindowsFixedSizeDialogHint
     modality: Qt.WindowModal
+    signal selectOver(string message);
+    property string strUrl: "";
+
     function open() {
         root.show()
         loading_img.visible = true
@@ -20,13 +24,11 @@ Window {
     function parseUrl(url) {
         //调用downloader.parse
         downlaoder.parse(url)
+        strUrl = url;
     }
 
     function showParsResult(json) {
         console.log(json)
-
-
-
         var rootJson = JSON.parse(json)
         if (rootJson["type"] == "parsed") {
             var msg = rootJson["msg"]
@@ -88,6 +90,7 @@ Window {
         ColumnLayout{
             anchors.fill: parent
                 Image{
+
                     Layout.preferredWidth:300
                     Layout.preferredHeight:sourceSize.height * 300 / sourceSize.width
                     id:image_thumbnail
@@ -126,6 +129,15 @@ Window {
                            var radioButton = chioceView.itemAtIndex(i);
                            if (radioButton.checked) {
                                  var objName = radioButton.objectName
+
+
+                                var rootData =   {
+                                   imgUrl:image_thumbnail.source,
+                                   selectData:data.get(i),
+                                   url:root.strUrl,
+                                   title:root.title
+                               }
+                                  root.selectOver(JSON.stringify(rootData));
                                   root.close()
                            }
                        }
