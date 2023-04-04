@@ -4,7 +4,7 @@
 #include <QJsonObject>
 #include <QJsonDocument>
 #include <QJsonParseError>
-
+#include <qDebug>
 using namespace std;
 
 #define LOG_PATH "Log"
@@ -96,7 +96,7 @@ QString FsDownloader::stop(QString path){
    QString newPath = FsDownloader::savePath +"/"+filename;
    cout << "newPath:"<<newPath.toStdString() << endl;
     QFile::copy(path, newPath);
-    return "";
+    return newPath;
 }
 
 
@@ -104,10 +104,11 @@ QString initSavePath(){
 
     QDir currentDir = QDir::current();
     QString path =  currentDir.absoluteFilePath("videos");
-    QDir dir(path);
+    QDir dir;
 
-    if (!dir.exists()) {
-        dir.mkpath("");
+    if (!dir.exists(path)) {
+       bool res =  dir.mkpath(path);
+       qDebug() << "新建目录是否成功" << res;
     }
     return path;
 }
