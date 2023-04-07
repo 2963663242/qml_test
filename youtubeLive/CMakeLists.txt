@@ -11,6 +11,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick Widgets REQUIRED)
 
@@ -68,8 +69,26 @@ if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(youtubeLive)
 endif()
 
-# 添加生成后事件
-#add_custom_command(
-#TARGET youtubeLive POST_BUILD
-#COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${CMAKE_BINARY_DIR}\"" /E /S /Y
-#)
+set(MY_EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}")
+message(STATUS "MY_EXECUTABLE_OUTPUT_PATH=${MY_EXECUTABLE_OUTPUT_PATH}")
+#添加生成后事件
+add_custom_command(
+TARGET youtubeLive POST_BUILD
+COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${MY_EXECUTABLE_OUTPUT_PATH}\"" /E /S /Y
+COMMAND cmd /C "\"${QT_DIR}/../../../bin/windeployqt.exe\"" "--qmldir" "${CMAKE_SOURCE_DIR}" "${MY_EXECUTABLE_OUTPUT_PATH}/${CMAKE_PROJECT_NAME}.exe"
+)
+
+# # 打印所有变量 
+# function(print_directory_variables dir)
+#     # Dump variables:
+#     get_property(_variableNames DIRECTORY ${dir} PROPERTY VARIABLES)
+#     list (SORT _variableNames)
+#     foreach (_variableName ${_variableNames})
+#         get_directory_property(_variableValue DIRECTORY ${dir} DEFINITION ${_variableName})
+#         message(STATUS "DIR ${dir}: ${_variableName}=${_variableValue}")
+#     endforeach()
+# endfunction(print_directory_variables)
+
+# # for example
+# print_directory_variables(.)
+
