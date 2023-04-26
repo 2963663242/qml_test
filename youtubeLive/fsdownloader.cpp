@@ -15,14 +15,13 @@ QString FsDownloader::savePath = initSavePath();
 
 FsDownloader::FsDownloader(QObject *parent) : QObject(parent)
 {
-    auto preConfig = [](){
+
+    static bool configSuss = [](){
         Downloader::setLogPath((char *)LOG_PATH);
-        std::string exePath = QCoreApplication::applicationDirPath().toStdString();
+        std::string exePath = QCoreApplication::applicationDirPath().toLocal8Bit().toStdString();
         Downloader::setexePath((char *)exePath.c_str());
         return true;
-    };
-
-    static bool configSuss = preConfig();
+    }();
 }
 
 
@@ -89,17 +88,26 @@ void FsDownloader::download(QString url,QString formatId){
 QString FsDownloader::stop(QString path){
 
     m_downloader.stop(this);
-   QFileInfo fileInfo(path);
+    
+    return saveFile(path);
+}
+
+QString FsDownloader::saveFile(QString path){
+    QString ext;
+     QFileInfo fileInfo(path);
+     bool isFile = fileInfo.isFile();
+     cout <<path.toStdString()<< "is File : " << isFile << endl;
    QString filename = fileInfo.fileName();
-   filename = filename.mid(0,filename.lastIndexOf("."));
+   ext = filename.mid(filename.lastIndexOf("."),filename.length()-filename.lastIndexOf("."));
+   if(ext == ".part")
+        filename = filename.mid(0,filename.lastIndexOf("."));
 
    QString newPath = FsDownloader::savePath +"/"+filename;
    cout << "newPath:"<<newPath.toStdString() << endl;
-    QFile::copy(path, newPath);
-    return newPath;
+    bool ret =  QFile::copy(path, newPath);
+    cout << "copy result: " << ret << endl;
+     return newPath;
 }
-
-
 QString initSavePath(){
 
     QDir currentDir = QDir::current();

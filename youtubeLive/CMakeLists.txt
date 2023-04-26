@@ -72,11 +72,11 @@ endif()
 set(MY_EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}")
 message(STATUS "MY_EXECUTABLE_OUTPUT_PATH=${MY_EXECUTABLE_OUTPUT_PATH}")
 #添加生成后事件
-add_custom_command(
-TARGET youtubeLive POST_BUILD
-COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${MY_EXECUTABLE_OUTPUT_PATH}\"" /E /S /Y
-COMMAND cmd /C "\"${QT_DIR}/../../../bin/windeployqt.exe\"" "--qmldir" "${CMAKE_SOURCE_DIR}" "${MY_EXECUTABLE_OUTPUT_PATH}/${CMAKE_PROJECT_NAME}.exe"
-)
+#add_custom_command(
+#TARGET youtubeLive POST_BUILD
+#COMMAND xcopy "\"${CMAKE_CURRENT_SOURCE_DIR}\\sdk\\win\\bin\\*\"" "\"${MY_EXECUTABLE_OUTPUT_PATH}\"" /E /S /Y
+#COMMAND cmd /C "\"${QT_DIR}/../../../bin/windeployqt.exe\"" "--qmldir" "${CMAKE_SOURCE_DIR}" "${MY_EXECUTABLE_OUTPUT_PATH}/${CMAKE_PROJECT_NAME}.exe"
+#)
 
 # # 打印所有变量 
 # function(print_directory_variables dir)

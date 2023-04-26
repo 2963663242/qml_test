@@ -17,6 +17,7 @@ public:
    Q_INVOKABLE  void parse(QString url);
    Q_INVOKABLE  void download(QString url,QString formatId);
     Q_INVOKABLE  QString stop(QString path);
+    Q_INVOKABLE QString saveFile(QString path);
     QString getSavePath(){
 
         return savePath;

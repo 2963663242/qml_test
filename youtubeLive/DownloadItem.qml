@@ -124,6 +124,17 @@ Item {
         if(json["type"]=="stop"){
          downloadFinished();
         }
+        if(json["type"]=="finished"){
+         var msg = json["msg"]
+         var ret_code = msg["ret_code"]
+            if(ret_code!="0")
+                downloader.saveFile(path);
+            else{
+                downloader.saveFile(msg["path"]);
+
+            }
+            downloadFinished();
+        }
     }
     Component.onCompleted: {
         downloader.download(strUrl,format_id);
